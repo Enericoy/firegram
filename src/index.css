@@ -28,6 +28,11 @@ body{
   margin-top: 60px;
   font-size: 2.6rem;
 }
+.progress-bar{
+  height: 5px;
+  background: var(--primary);
+  margin-top: 20px;
+}
 
 /* upload form styles */
 
