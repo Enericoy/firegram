@@ -7,7 +7,7 @@ const useFirestore = (collections) => {
     const [docs, setDocs] = useState([]);
 
     useEffect(() => {
-        const q = query(collection(projectFirestore, collections));
+        const q = query(collection(projectFirestore, collections), orderBy("createdAt", "asc"));
         const unsub = onSnapshot(q, (snap) => {
             let documents = [];
             snap.forEach((doc) => {
